@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2black">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:background="@drawable/background3black"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/item"
+            android:layout_alignBottom="@+id/item"
+            android:layout_toLeftOf="@+id/item" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="54dp"
+            android:id="@+id/item"
+            android:text="Item"
+            android:textSize="40dp"
+            android:textColor="#ffffffff"
+            android:background="@drawable/background3black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item name"
+            android:id="@+id/whathaveyoulost"
+            android:textSize="25dp"
+            android:textColor="#ffffffff"
+            android:textStyle="italic"
+            android:typeface="normal"
+            android:layout_below="@+id/item"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/inputitemyoulost"
+        android:layout_below="@+id/whathaveyoulost"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/background3black"
+        android:layout_toStartOf="@+id/button8"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="location"
+        android:id="@+id/textView"
+        android:textSize="25dp"
+        android:textColor="#ffffffff"
+        android:textStyle="italic"
+        android:typeface="normal"
+        android:layout_below="@+id/inputitemyoulost" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/background3black"
+        android:layout_alignRight="@+id/spinner"
+        android:layout_alignEnd="@+id/spinner" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map"
+        android:id="@+id/button8"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_alignLeft="@+id/button9"
+        android:layout_alignStart="@+id/button9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Colour"
+        android:id="@+id/textView2"
+        android:textSize="25dp"
+        android:textColor="#ffffffff"
+        android:textStyle="italic"
+        android:typeface="normal"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/background3black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brand"
+        android:id="@+id/textView5"
+        android:textSize="25dp"
+        android:textColor="#ffffffff"
+        android:textStyle="italic"
+        android:typeface="normal"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner2"
+        android:background="@drawable/background3black"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Picture"
+        android:id="@+id/button9"
+        android:layout_below="@+id/whathaveyoulost"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Additional Remarks"
+        android:id="@+id/textView6"
+        android:textSize="25dp"
+        android:textColor="#ffffffff"
+        android:textStyle="italic"
+        android:typeface="normal"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/background3black"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:background="@drawable/background3black"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_alignLeft="@+id/button8"
+        android:layout_alignStart="@+id/button8"
+        android:layout_alignRight="@+id/button8"
+        android:layout_alignEnd="@+id/button8"
+        android:layout_alignBottom="@+id/spinner2"
+        android:src="@drawable/itemicon" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:id="@+id/button10"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_toStartOf="@+id/imageView2"
+        android:layout_marginBottom="20dp" />
+
+
+</RelativeLayout>
+
